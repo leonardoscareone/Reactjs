@@ -10,6 +10,7 @@ import Card from './components/Card/Card';
 
 
 function App() {
+  
   const [open, setOpen] = useState(false);
 
   const handleClose = (value) => {
@@ -42,5 +43,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

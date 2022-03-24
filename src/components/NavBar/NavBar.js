@@ -19,7 +19,7 @@ function NavBar(props) {
                 <li><Button variant="contained">Nosotros</Button></li>
                 <li><Button variant="contained">Contacto</Button></li>
             </ul>
-            <Button variant="contained"><CartWidget /></Button>
+            <li><Button variant="contained"><CartWidget /></Button></li>
         </header>
     )
 }
