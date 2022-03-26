@@ -9,7 +9,6 @@ const ListProducts = ({children}) => {
         talle: 'XL',
         price: 1500,
         image: 'remera3.jpeg',
-        stock: 5
     }
     
 

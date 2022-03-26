@@ -8,18 +8,16 @@ export default function Card({ data }) {
     const [ count, setCount ] = useState(1)
     const [ countTest, setCountTest ] = useState(1)
 
-    const addStock = () => {
-        setCount(count + 1)
+    function onAdd(count){
+        console.log(`La cantidad de productos agregados es: ${count}`);
     }
-    const removeStock = () => {
-        setCountTest(countTest - 1)
-    }
+
     return(
         <div className="card-item">
                 <h2>{title}</h2>
                 <p>Precio : $ {price}</p>
                 <p>Talle : {talle}</p>
-                <ItemCount stock={stock} />
+                <ItemCount stock={6} initial={1} onAdd={onAdd} />
         </div>
     )
 }
