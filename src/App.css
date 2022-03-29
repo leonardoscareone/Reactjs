@@ -10,7 +10,6 @@ header.main-header {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  background: rgba(109, 184, 255, 0.863);
 }
 
 ul.navbar {
@@ -22,15 +21,6 @@ ul.navbar li {
     margin-right: 15px;
 }
 
-header.main-header li button {
-  background: none;
-  font-family: 'Montserrat';
-  transition: all 0.2s ease;
-}
-header.main-header li button:hover {
-  background: none;
-}
-
 .container-logo {
   width: 80px;
 }
@@ -39,19 +29,21 @@ header.main-header li button:hover {
   width: 100%;
 }
 .card-item {
-  float: left;
-  width: calc(33.333% - 14px);
-  margin-top: 20px;
-  margin-left: 20px;
-  box-shadow: 1px 1px 5px #0000002b;
-  text-align: center;
-  overflow: hidden;
-}
-.container-general {
-  width: 1200px;
-}
+    float: left;
+    border: 1px solid #ababab;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px #0000002b;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
 .container-cards {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
+
+body{
+width: 100%;}

@@ -29,18 +29,8 @@ function App() {
       {/* <NavBarClass /> */}
       <ItemListContainer greeting="Bienvenidos a Valkyrie Clothes"/>
       <ListProducts>
-        <p>Productos Relacionados</p>
+        <p>Productos en Venta</p>
       </ListProducts>
-      <ListProducts>
-        <p>Productos en Oferta</p>
-      </ListProducts>
-      <button onClick={handleOpen}>Abrir modal</button>
-      <ModalCustom handleClose={handleClose} open={open}>
-        <p>FORMULARIO Contacto</p>
-      </ModalCustom>
-      <ModalCustom handleClose={handleClose} open={open}>
-        <Card />
-      </ModalCustom>
     </div>
   );
 }

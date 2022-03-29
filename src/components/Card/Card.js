@@ -4,7 +4,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 
 export default function Card({ data }) {
-    const { title, price, talle, stock} = data
+    const { title, price, talle, stock, image} = data
     const [ count, setCount ] = useState(1)
     const [ countTest, setCountTest ] = useState(1)
 
@@ -14,10 +14,14 @@ export default function Card({ data }) {
 
     return(
         <div className="card-item">
+            <img src={`./${image}`} alt={image} />
+
+            <div className='container-card-data'>
                 <h2>{title}</h2>
                 <p>Precio : $ {price}</p>
                 <p>Talle : {talle}</p>
-                <ItemCount stock={6} initial={1} onAdd={onAdd} />
+                <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+            </div>
         </div>
     )
 }

@@ -1,31 +1,16 @@
-import React,{useState, useEffect} from 'react'
 import Card from '../Card/Card'
+import React,{useState, useEffect} from 'react'
+import { mockProducts } from './ItemList'
+import Items from './Items';
 
-const ListProducts = ({children}) => {
-    const [showCard, setShowCard] = useState(true)
-
-    let dataProduct = {
-        title : 'Remera',
-        talle: 'XL',
-        price: 1500,
-        image: 'remera3.jpeg',
-    }
-    
-
-    const hideCard = () => {
-        setShowCard (!showCard)
-    }
-
-
-    return(
-        <div className="container-cards">
-            <h2> {children} </h2>
-
-            <button onClick={hideCard}>Ocultar/Mostrar Card</button>
-
-            {showCard && <Card data={dataProduct}/>}
-        </div>
-    ) 
-}
+const ListProducts = () => {
+    return (
+      <section className="item-list-container">
+        <h2 className="item-list-container__title">Productos destacados</h2>
+  
+        <Items />
+      </section>
+    );
+  };
     
 export default ListProducts;
