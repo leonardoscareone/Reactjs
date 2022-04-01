@@ -2,12 +2,13 @@ import React,{useState, useEffect} from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import Card from '../Card/Card'
 import { mockProducts } from '../../utils/mockProducts'
+import ItemList from '../ListProducts/ItemList'
 
 
 function ItemListContainer () {
 
     const [products, setProducts] = useState([])
-    
+
     const getProducts = () => {
         return new Promise ((resolve,reject) => {
             return setTimeout(() => {
@@ -19,10 +20,12 @@ function ItemListContainer () {
     useEffect( () => {
         getProducts().then( (products) =>{
             setProducts(products)
-            console.log(products)
         })
     },[])
 
+    return (
+        <ItemList products={products}/>
+    )
 }
 
 

@@ -28,9 +28,7 @@ function App() {
      <NavBar />
       {/* <NavBarClass /> */}
       <ItemListContainer />
-      <ListProducts>
         <p>Productos en Venta</p>
-      </ListProducts>
     </div>
   );
 }

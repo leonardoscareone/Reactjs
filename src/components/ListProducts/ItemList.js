@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Card from '../Card/Card'
 
-const ItemList = ({products}) => {
+const ItemList = ({products=[]}) => {
 
     return(
         <div className="container-cards">
