@@ -25,7 +25,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     return(
         <>
             {
-            stock === 1
+            stock < 1
             ?
             <h2>Sin Stock</h2>
             :

@@ -27,7 +27,7 @@ function App() {
     <div className="App">
      <NavBar />
       {/* <NavBarClass /> */}
-      <ItemListContainer greeting="Bienvenidos a Valkyrie Clothes"/>
+      <ItemListContainer />
       <ListProducts>
         <p>Productos en Venta</p>
       </ListProducts>
